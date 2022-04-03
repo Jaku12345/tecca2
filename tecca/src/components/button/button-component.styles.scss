@@ -1,0 +1,26 @@
+.button {
+  background: transparent; /* Green */
+  border: 1px solid white;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    color: black;
+    background-color: white;
+  }
+
+  &.sign-in {
+    border: 1px solid black;
+    color: black;
+
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+}

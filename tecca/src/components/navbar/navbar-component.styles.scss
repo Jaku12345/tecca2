@@ -1,0 +1,65 @@
+.navbar {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  align-items: center;
+  background-color: white;
+
+  .logo {
+    width: 6em;
+    cursor: pointer;
+    -moz-user-select: none; /* These user-select properties are inheritable, used to prevent text selection */
+    -webkit-user-select: none;
+    -ms-user-select: none; /* From IE10 only */
+    user-select: none; /* Not valid CSS yet, as of July 2012 */
+
+    -webkit-user-drag: none; /* Prevents dragging of images/divs etc */
+    align-self: center;
+    margin-left: 4em;
+    justify-self: center;
+  }
+
+  .navbar__right-side {
+    gap: 1em;
+    display: flex;
+    margin-right: 1.5em;
+  }
+
+  .navbar__left-side {
+    display: flex;
+    margin-left: 1.4em;
+
+    .link {
+      margin: 0 1em;
+      font-size: 0.8rem;
+    }
+  }
+
+  .link {
+    margin: 0em 0.4em;
+
+    flex-direction: column;
+    cursor: pointer;
+    font-size: 11px;
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .link:hover {
+  }
+
+  .link-logo {
+    height: 21px;
+    padding-bottom: 4px;
+  }
+}

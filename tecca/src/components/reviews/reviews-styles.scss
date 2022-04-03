@@ -1,0 +1,35 @@
+.reviews {
+  width: 1000px;
+  margin-left: 15em;
+  padding: 3em;
+  transition: all 0.3s ease-in;
+
+  .reviews-navbar {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+  }
+
+  .reviews-container {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-in;
+
+    .review {
+      display: flex;
+      justify-content: space-between;
+      margin: 0.3em;
+      border-bottom: 1px solid black;
+      padding: 1em;
+      transition: all 0.3s ease-in;
+
+      .info {
+        width: 728px;
+      }
+    }
+
+    .reviews-footer {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.headline {
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 2.6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .headline__message {
+    margin: 0.5em 0em;
+    animation: fadeIn 0.1s;
+    font-size: 0.9rem;
+    color: rgb(255, 255, 255);
+    animation-name: animation;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    cursor: default;
+  }
+
+  @keyframes animation {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}

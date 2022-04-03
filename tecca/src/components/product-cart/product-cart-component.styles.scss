@@ -1,0 +1,138 @@
+.product {
+  font-size: 12px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+  height: 490px;
+  width: 337px;
+  margin-bottom: 8px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  .images-and-its-elements-container {
+    cursor: pointer;
+    position: relative;
+    height: 442px;
+    width: 337px;
+
+    img {
+      height: 442px;
+      width: 337px;
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      transition: opacity 0.15s linear;
+      object-fit: cover;
+    }
+
+    .main-image {
+      opacity: 1;
+    }
+
+    .hover-image {
+      opacity: 0;
+    }
+
+    &.change-image {
+      .hover-image {
+        opacity: 1;
+      }
+    }
+
+    &.change-image2 {
+      .hover-image {
+        opacity: 0;
+      }
+    }
+
+    .wishlist-container {
+      cursor: pointer;
+      position: absolute;
+      top: -110px;
+      right: 10px;
+      background-color: rgb(255, 255, 255);
+      width: 37px;
+      height: 37px;
+      border-radius: 50%;
+      .logo {
+        width: 17px;
+        height: 17px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+    }
+  }
+
+  .images-and-its-elements-container:hover {
+    transition: all 2s ease-in-out;
+    .btn-container {
+      position: relative;
+      .btn {
+        position: absolute;
+        bottom: -430px;
+        width: 300px;
+        left: 20px;
+        height: 50px;
+        background-color: rgb(255, 255, 255);
+        cursor: pointer;
+        border: none;
+        transition: all 0.3s ease;
+      }
+
+      .sizes-container {
+        background-color: rgb(255, 255, 255);
+        padding-left: 55px;
+        padding-right: 75px;
+
+        position: absolute;
+        bottom: -430px;
+        width: 172px;
+        left: 20px;
+        max-height: 200px;
+        border: none;
+        display: grid;
+        grid-template-columns: 50px 50px 50px 50px;
+        visibility: hidden;
+        cursor: pointer;
+
+        p {
+          text-align: center;
+          padding: 0.4em 0em;
+          &:hover {
+            background-color: rgb(235, 235, 235);
+          }
+        }
+      }
+    }
+  }
+
+  .images-and-its-elements-container:hover .btn-container:hover {
+    .sizes-container {
+      transition: all 0.3s ease-in;
+    }
+    .sizes-container {
+      visibility: visible;
+    }
+  }
+
+  .product-info {
+    cursor: pointer;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .name {
+      font-size: 13px;
+    }
+
+    .price {
+      font-size: 13px;
+    }
+  }
+}

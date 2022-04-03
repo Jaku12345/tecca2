@@ -1,0 +1,57 @@
+.shop-page-container {
+  margin-top: 7em;
+  display: grid;
+  grid-template-areas:
+    "a a"
+    "b c";
+
+  grid-template-columns: 50vw 50vw;
+  gap: 1em;
+
+  .sweaters-container {
+    background-image: url("../../assets/shopPage-hero.png");
+    padding: 16em;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    grid-area: a;
+    text-align: center;
+    color: white;
+    align-items: center;
+
+    .btn:hover {
+    }
+  }
+
+  .shirts-container {
+    background-image: url("../../assets/shopPageShirts.png");
+    padding: 20em;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    grid-area: b;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    align-items: center;
+  }
+
+  .jeans-container {
+    background-image: url("../../assets/shopPageJeans.png");
+    padding: 20em;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    grid-area: c;
+    background-size: cover;
+    background-position-y: 90%;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    align-items: center;
+  }
+}
